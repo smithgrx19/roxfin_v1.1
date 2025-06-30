@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "admin@roxfin.co.za"; // Change this to your email
+    $to = "marce@breemtech.co.za"; // Change this to your email
     $subject = "New Contact Form Submission";
 
     $name = htmlspecialchars($_POST['name']);
