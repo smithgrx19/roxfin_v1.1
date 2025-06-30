@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roxfin - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" class="logo-img" alt="Roxfin Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="./public/arialHome.mp4" type="video/mp4" />
+        </video>
+        <section class="hero">
+            <div class="hero-content">
+              <h1>Welcome to Roxfin Property Finance</h1>
+              <p>
+                Roxfin stands as a leader in property finance, delivering tailored lending solutions across South Africa. Whether you're securing funds for a property purchase, renovation, or improvement — or an estate agent needing a commission advance — we ensure reliable, fast, and secure support. With deep market insight and a commitment to service excellence, Roxfin is your trusted partner in property finance.
+              </p>
+            </div>
+        </section>
+          
+        <section class="section blue-bg">
+            <h2 style="padding-bottom: 20px; color: #0F1238;">What We Offer</h2>
+            <div>
+                <button class="tab-button" onclick="toggleInfo('info1', event)">
+                  Seller Proceeds Advance
+                </button>
+                <button class="tab-button" onclick="toggleInfo('info2', event)">
+                  Municipal & Clearance Cost Loans
+                </button>
+                <button class="tab-button" onclick="toggleInfo('info3', event)">
+                  Unbonded Property Loans
+                </button>
+                <button class="tab-button" onclick="toggleInfo('info4', event)">
+                  Commission Advances for Estate Agents
+                </button>
+                <button class="tab-button" onclick="toggleInfo('info5', event)">
+                  Renovation & Improvement Loans
+                </button>
+                <button class="tab-button" onclick="toggleInfo('info6', event)">
+                  Transfer Duty Loans for Purchasers
+                </button>
+            </div>
+              
+            <div>
+                <p id="info1" class="info-text">
+                  Sellers requiring an advance on the proceeds of the sale of their properties, whilst a transfer is pending.
+                    </br>We lend up to 80% of the proceeds, to a maximum of R500 000.
+                </p>
+                <p id="info2" class="info-text">
+                  Sellers requiring funds to pay municipal and levy accounts and clearances, costs of CoC’s or other property-related expenses.
+                </p>
+                <p id="info3" class="info-text">
+                  Owners of unbonded properties, requiring short-term loans. The borrower must provide the property as security for the loan.
+                </p>
+                <p id="info4" class="info-text">
+                  Estate agents requiring an advance on sales commission.
+                </p>
+                <p id="info5" class="info-text">
+                  We provide loans to owners of property who require funds for renovations or improvements.
+                </p>
+                <p id="info6" class="info-text">
+                  Purchasers requiring funds to pay transfer duty where funds are available upon transfer.
+                </p>
+            </div>
+              
+              
+        </section>
+        <section style="background-color: #2F5FD9;" class="section">
+            <h2 style="padding-bottom: 20px; color: white;">Why Choose Roxfin?</h2>        
+            <div class="services-grid">
+                <div class="service-card">Registered Credit Provider</div>
+                <div class="service-card">Loans paid within 24 hours upon attorney guarantee</div>
+                <div class="service-card">Custom solutions for sellers, buyers, and estate agents</div>
+                <div class="service-card">Deep knowledge of the South African property market</div>
+
+            </div>
+        </section>
+
+
+        <section class="section">
+            <h2 style="padding-bottom: 20px; color: #0F1238;">Our Partners</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="partner-card"><img id="partners" src="./public/absa.png" alt="absa"></div>
+                    <div class="partner-card"><img id="partners" src="./public/rawson.png" alt="rawson"></div>
+                    <div class="partner-card"><img id="partners" src="./public/engel.png" alt="engel"></div>
+                    <div class="partner-card"><img id="partners" src="./public/gradwell.png" alt="gradwell"></div>
+                    <div class="partner-card"><img id="partners" src="./public/remax.png" alt="remax"></div>
+                    <div class="partner-card"><img id="partners" src="./public/pam.png" alt="pam"></div>
+                    <div class="partner-card"><img id="partners" src="./public/wehome.png" alt="wehome"></div>
+                    <div class="partner-card"><img id="partners" src="./public/azaria.png" alt="azaria"></div>
+
+                    <div class="partner-card"><img id="partners" src="./public/absa.png" alt="Absa"></div>
+                    <div class="partner-card"><img id="partners" src="./public/rawson.png" alt="rawson"></div>
+                    <div class="partner-card"><img id="partners" src="./public/engel.png" alt="engel"></div>
+                    <div class="partner-card"><img id="partners" src="./public/gradwell.png" alt="gradwell"></div>
+                    <div class="partner-card"><img id="partners" src="./public/remax.png" alt="remax"></div>
+                    <div class="partner-card"><img id="partners" src="./public/pam.png" alt="pam"></div>
+                    <div class="partner-card"><img id="partners" src="./public/wehome.png" alt="wehome"></div>
+                    <div class="partner-card"><img id="partners" src="./public/azaria.png" alt="azaria"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer><p>&copy; 2025 Roxfin Property Finance. All rights reserved.</p></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
